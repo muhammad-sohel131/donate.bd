@@ -15,7 +15,7 @@
 <body>
     <!-- Nav Bar start -->
     <header class="bg-[rgb(249,247,243)] py-6">
-        <div class="container flex justify-between">
+        <div class="container justify-between hidden md:flex">
             <button class="btn">Blog</button>
             <div class="logo flex gap-x-3 items-center">
                 <img src="./assets/logo.png" alt="logo">
@@ -27,6 +27,22 @@
                 <span>BD</span>
             </div>
         </div>
+
+        <!-- For Mobile Nav -->
+        <div class="container flex justify-between flex-col items-center gap-y-5 md:hidden">
+            <div class="logo flex gap-x-3 items-center">
+                <img src="./assets/logo.png" alt="logo">
+                <h2 class="font-bold text-xl">Donate Bangladesh</h2>
+            </div>
+            <div class="flex justify-between w-full">
+                <button class="btn">Blog</button>
+                <div class="balance flex gap-x-3 items-center text-xl ">
+                    <img src="./assets/coin.png" alt="coin">
+                    <span id="account">5500</span>
+                    <span>BD</span>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- Nav Bar End -->
 
@@ -34,8 +50,8 @@
     <main class="my-20">
         <section>
             <div class="container flex justify-center gap-x-4">
-                <button class="btn">Donation</button>
-                <button class="btn bg-white border-[rgba(17,17,17,.3)] text-[rgba(17,17,17,.7)]">History</button>
+                <button class="btn" id="donationBtn">Donation</button>
+                <button class="btn white-btn" id="historyBtn">History</button>
             </div>
         </section>
 
@@ -129,7 +145,8 @@
                 <div class="card lg:card-side bg-base-100 shadow-xl mt-9 border-[rgba(17,17,17,.1)] border">
                     <div class="card-body lg:w-1/2">
                         <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
-                        <p class="text-[rgba(17,17,17,.7)]"> The recent floods in Feni have devastated local communities, leading to severe disruption
+                        <p class="text-[rgba(17,17,17,.7)]"> The recent floods in Feni have devastated local
+                            communities, leading to severe disruption
                             and loss. Your generous donation will help provi</p>
                     </div>
                 </div>
@@ -137,7 +154,8 @@
                 <div class="card lg:card-side bg-base-100 shadow-xl mt-9 border-[rgba(17,17,17,.1)] border">
                     <div class="card-body lg:w-1/2">
                         <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
-                        <p class="text-[rgba(17,17,17,.7)]"> The recent floods in Feni have devastated local communities, leading to severe disruption
+                        <p class="text-[rgba(17,17,17,.7)]"> The recent floods in Feni have devastated local
+                            communities, leading to severe disruption
                             and loss. Your generous donation will help provi</p>
                     </div>
                 </div>
