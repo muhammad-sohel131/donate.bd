@@ -142,7 +142,7 @@
         <!-- History Section -->
         <section style="display: none;" id="historySection">
             <div class="container">
-                <div class="card lg:card-side bg-base-100 shadow-xl mt-9 border-[rgba(17,17,17,.1)] border">
+                <!-- <div class="card lg:card-side bg-base-100 shadow-xl mt-9 border-[rgba(17,17,17,.1)] border">
                     <div class="card-body lg:w-1/2">
                         <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                         <p class="text-[rgba(17,17,17,.7)]"> The recent floods in Feni have devastated local
@@ -158,11 +158,26 @@
                             communities, leading to severe disruption
                             and loss. Your generous donation will help provi</p>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </section>
     </main>
+
+    <!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box flex flex-col items-center">
+    <h2 class="text-4xl font-bold mb-5">Congrats!</h2>
+    <img src="./assets/coin.png" alt="coin">
+    <p class="py-4">You have donated for Humankind</p>
+    <h3 class="text-xl font-bold">Successfully</h3>
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn white-btn">Close Confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
     <!-- main end -->
     <script src="./script.js"></script>
 </body>

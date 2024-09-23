@@ -64,8 +64,32 @@ function addDonate(event){
             currentAccounts[0].innerText = currentAccountValue;
             currentAccounts[1].innerText = currentAccountValue;
 
-            alert("Donation successfull!")
             textField.value = '';
+
+            addHistory(parent.querySelector(".card-title").innerText, fieldValue);
         }
     }
+}
+
+function addHistory(title,amount){
+    title = amount + " Taka is Donated" +title.slice(6);
+    let date = "Date : " + new Date();
+
+    const history = document.querySelector("#historySection .container");
+
+    history.innerHTML += `
+    
+         <div class="card lg:card-side bg-base-100 shadow-xl mt-9 border-[rgba(17,17,17,.1)] border">
+                    <div class="card-body lg:w-1/2">
+                        <h2 class="card-title">${title}</h2>
+                        <p class="text-[rgba(17,17,17,.7)]"> ${date}</p>
+                    </div>
+                </div>
+    `
+
+    my_modal_1.showModal();
+}
+
+function opneModal(){
+    
 }
