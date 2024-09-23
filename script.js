@@ -29,3 +29,31 @@ function showSection(event){
 
     
 }
+
+
+const donateBtns = document.getElementsByClassName('donate-now-btn');
+for(let i = 0; i < donateBtns.length; i++){
+    donateBtns[i].addEventListener('click', addDonate);
+}
+
+function addDonate(event){
+    const currentAccounts = document.querySelector(".current-account");
+    let parent = event.target.parentElement;
+    let amount = parent.querySelector(".amount").innerText;
+    const textField = parent.querySelector(".input-bordered");
+
+    let fieldValue = textField.value;
+
+    if(isNaN(fieldValue) || fieldValue === ''){
+        alert("Please, Enter Donation Amount!");
+        textField.value = '';
+    }else {
+        fieldValue = parseFloat(fieldValue);
+        amount = parseFloat(amount);
+        if(amount < fieldValue){
+            alert("Insufficient Balance!");
+        }else{
+            
+        }
+    }
+}

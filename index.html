@@ -23,7 +23,7 @@
             </div>
             <div class="balance flex gap-x-3 items-center text-xl ">
                 <img src="./assets/coin.png" alt="coin">
-                <span id="account">5500</span>
+                <span class="current-account">5500</span>
                 <span>BD</span>
             </div>
         </div>
@@ -38,7 +38,7 @@
                 <button class="btn">Blog</button>
                 <div class="balance flex gap-x-3 items-center text-xl ">
                     <img src="./assets/coin.png" alt="coin">
-                    <span id="account">5500</span>
+                    <span class="current-account">5500</span>
                     <span>BD</span>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                         <button
                             class="bg-[rgba(17,17,17,0.05)] rounded-lg flex items-center gap-x-1 py-2 px-5 max-w-36">
                             <img src="./assets/coin.png" alt="coin">
-                            <span>0</span>
+                            <span class="amount">0</span>
                             <span>BD</span>
                         </button>
 
@@ -79,7 +79,7 @@
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts and making a positive impact on the lives of those in need.</p>
                         <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button class="btn">Donate Now</button>
+                        <button class="btn donate-now-btn">Donate Now</button>
                     </div>
                 </div>
 
@@ -93,7 +93,7 @@
                         <button
                             class="bg-[rgba(17,17,17,0.05)] rounded-lg flex items-center gap-x-1 py-2 px-5 max-w-36">
                             <img src="./assets/coin.png" alt="coin">
-                            <span>600</span>
+                            <span class="amount">600</span>
                             <span>BD</span>
                         </button>
 
@@ -105,7 +105,7 @@
                             counts towards making a real difference. Please consider donating today to assist those in
                             urgent need.</p>
                         <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button class="btn">Donate Now</button>
+                        <button class="btn donate-now-btn">Donate Now</button>
                     </div>
                 </div>
 
@@ -120,7 +120,7 @@
                         <button
                             class="bg-[rgba(17,17,17,0.05)] rounded-lg flex items-center gap-x-1 py-2 px-5 max-w-36">
                             <img src="./assets/coin.png" alt="coin">
-                            <span>2400</span>
+                            <span class="amount">2400</span>
                             <span>BD</span>
                         </button>
 
@@ -133,14 +133,14 @@
                             Please consider making a donation to support these brave individuals in their time of need.
                         </p>
                         <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button class="btn">Donate Now</button>
+                        <button class="btn donate-now-btn">Donate Now</button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- History Section -->
-        <section id="historySection">
+        <section style="display: none;" id="historySection">
             <div class="container">
                 <div class="card lg:card-side bg-base-100 shadow-xl mt-9 border-[rgba(17,17,17,.1)] border">
                     <div class="card-body lg:w-1/2">
