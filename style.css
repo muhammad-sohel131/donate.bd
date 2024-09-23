@@ -1,5 +1,36 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+}
+
+h2{
+    color: rgb(17,17,17);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p{
+    color: rgba(17,17,17,.7);
+    font-weight: 300;
+}
+
+.container {
+    width: 90% !important;
+    max-width: 1140px !important;
+    margin: auto;
+}
+
+.btn {
+    border-radius: 8px;
+    background: rgb(180, 244, 97);
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: 600;
 }
