@@ -37,12 +37,14 @@ for(let i = 0; i < donateBtns.length; i++){
 }
 
 function addDonate(event){
-    const currentAccounts = document.querySelector(".current-account");
+    const currentAccounts = document.getElementsByClassName("current-account");
     let parent = event.target.parentElement;
-    let amount = parent.querySelector(".amount").innerText;
+    let amountElement = parent.querySelector(".amount");
     const textField = parent.querySelector(".input-bordered");
 
     let fieldValue = textField.value;
+    let amount = amountElement.innerText;
+    let currentAccountValue = currentAccounts[0].innerText;
 
     if(isNaN(fieldValue) || fieldValue === ''){
         alert("Please, Enter Donation Amount!");
@@ -50,10 +52,20 @@ function addDonate(event){
     }else {
         fieldValue = parseFloat(fieldValue);
         amount = parseFloat(amount);
-        if(amount < fieldValue){
+        currentAccountValue = parseFloat(currentAccountValue);
+
+        if(currentAccountValue < fieldValue){
             alert("Insufficient Balance!");
         }else{
-            
+            amount += fieldValue;
+            currentAccountValue -= fieldValue;
+
+            amountElement.innerText = amount;
+            currentAccounts[0].innerText = currentAccountValue;
+            currentAccounts[1].innerText = currentAccountValue;
+
+            alert("Donation successfull!")
+            textField.value = '';
         }
     }
 }
