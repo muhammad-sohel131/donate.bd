@@ -89,3 +89,4 @@ function addHistory(title,amount){
 
     my_modal_1.showModal();
 }
+
