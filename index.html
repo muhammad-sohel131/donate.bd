@@ -14,46 +14,48 @@
 
 <body>
     <!-- Nav Bar start -->
-    <header class="bg-[rgb(249,247,243)] py-6">
-        <div class="container justify-between hidden md:flex">
-            <button class="btn">Blog</button>
-            <div class="logo flex gap-x-3 items-center">
-                <img src="./assets/logo.png" alt="logo">
-                <h2 class="font-bold text-xl">Donate Bangladesh</h2>
-            </div>
-            <div class="balance flex gap-x-3 items-center text-xl ">
-                <img src="./assets/coin.png" alt="coin">
-                <span class="current-account">5500</span>
-                <span>BD</span>
-            </div>
-        </div>
-
-        <!-- For Mobile Nav -->
-        <div class="container flex justify-between flex-col items-center gap-y-5 md:hidden">
-            <div class="logo flex gap-x-3 items-center">
-                <img src="./assets/logo.png" alt="logo">
-                <h2 class="font-bold text-xl">Donate Bangladesh</h2>
-            </div>
-            <div class="flex justify-between w-full">
+    <header class="bg-white pb-6 border-b border-[rgba(17,17,17,.3)]">
+        <nav class="bg-[rgb(249,247,243)] py-6">
+            <div class="container justify-between hidden md:flex">
                 <button class="btn">Blog</button>
+                <div class="logo flex gap-x-3 items-center">
+                    <img src="./assets/logo.png" alt="logo">
+                    <h2 class="font-bold text-xl">Donate Bangladesh</h2>
+                </div>
                 <div class="balance flex gap-x-3 items-center text-xl ">
                     <img src="./assets/coin.png" alt="coin">
                     <span class="current-account">5500</span>
                     <span>BD</span>
                 </div>
             </div>
+    
+            <!-- For Mobile Nav -->
+            <div class="container flex justify-between flex-col items-center gap-y-5 md:hidden">
+                <div class="logo flex gap-x-3 items-center">
+                    <img src="./assets/logo.png" alt="logo">
+                    <h2 class="font-bold text-xl">Donate Bangladesh</h2>
+                </div>
+                <div class="flex justify-between w-full">
+                    <button class="btn">Blog</button>
+                    <div class="balance flex gap-x-3 items-center text-xl ">
+                        <img src="./assets/coin.png" alt="coin">
+                        <span class="current-account">5500</span>
+                        <span>BD</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- two buttons -->
+        <div class="container flex justify-center gap-x-4 mt-5">
+            <button class="btn" id="donationBtn">Donation</button>
+            <button class="btn white-btn" id="historyBtn">History</button>
         </div>
     </header>
     <!-- Nav Bar End -->
 
     <!-- main start -->
     <main class="my-20">
-        <section>
-            <div class="container flex justify-center gap-x-4">
-                <button class="btn" id="donationBtn">Donation</button>
-                <button class="btn white-btn" id="historyBtn">History</button>
-            </div>
-        </section>
 
         <!-- Cards Section -->
         <section id="cardSection">

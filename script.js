@@ -46,7 +46,7 @@ function addDonate(event){
     let amount = amountElement.innerText;
     let currentAccountValue = currentAccounts[0].innerText;
 
-    if(isNaN(fieldValue) || fieldValue === ''){
+    if(isNaN(fieldValue) || fieldValue === '' || fieldValue <= 0){
         alert("Please, Enter Donation Amount!");
         textField.value = '';
     }else {
@@ -82,14 +82,10 @@ function addHistory(title,amount){
          <div class="card lg:card-side bg-base-100 shadow-xl mt-9 border-[rgba(17,17,17,.1)] border">
                     <div class="card-body lg:w-1/2">
                         <h2 class="card-title">${title}</h2>
-                        <p class="text-[rgba(17,17,17,.7)]"> ${date}</p>
+                        <p class="text-[rgba(17,17,17,.7)] bg-gray-50"> ${date}</p>
                     </div>
                 </div>
     `
 
     my_modal_1.showModal();
-}
-
-function opneModal(){
-    
 }
