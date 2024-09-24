@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate-Bangladesh</title>
+
+    <!-- Tailwind and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Nav Bar start -->
+    <header class="bg-white pb-6">
+        <nav class="bg-[rgb(249,247,243)] py-6">
+            <div class="container justify-between hidden md:flex">
+                <button class="btn">Home</button>
+                <div class="logo flex gap-x-3 items-center">
+                    <img src="./assets/logo.png" alt="logo">
+                    <h2 class="font-bold text-xl">Donate Bangladesh</h2>
+                </div>
+                <div class="balance flex gap-x-3 items-center text-xl ">
+                    <img src="./assets/coin.png" alt="coin">
+                    <span class="current-account">5500</span>
+                    <span>BD</span>
+                </div>
+            </div>
+    
+            <!-- For Mobile Nav -->
+            <div class="container flex justify-between flex-col items-center gap-y-5 md:hidden">
+                <div class="logo flex gap-x-3 items-center">
+                    <img src="./assets/logo.png" alt="logo">
+                    <h2 class="font-bold text-xl">Donate Bangladesh</h2>
+                </div>
+                <div class="flex justify-between w-full">
+                    <button class="btn">Home</button>
+                    <div class="balance flex gap-x-3 items-center text-xl ">
+                        <img src="./assets/coin.png" alt="coin">
+                        <span class="current-account">5500</span>
+                        <span>BD</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Nav Bar End -->
+
+    <!-- main start -->
+    <main class="my-20">
+        <section>
+            <div class="container">
+                <h2 class="text-4xl font-black flex gap-4">Important FAQ
+                    <img width="40px" src="./assets/question.png" alt="question">
+                </h2>
+
+                <div class="mt-5">
+                    <div tabindex="0" class="collapse collapse-arrow border-base-300 border">
+                        <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+                        <div class="collapse-content">
+                          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, allowing scripts like JavaScript to manipulate the content, structure, and styles of a webpage dynamically.</p>
+                        </div>
+                      </div>
+
+                      <div tabindex="0" class="collapse collapse-arrow border-base-300 border mt-2">
+                        <div class="collapse-title text-xl font-medium">How do you select element from the DOM?</div>
+                        <div class="collapse-content">
+                          <p>To select elements from the DOM, you can use the following JavaScript methods:
+                            <ul>
+                                <li>
+                                    <b>getElementById:</b> Selects an element by its ID.
+                                </li>
+                                <li>
+                                    <b>getElementsByClassName:</b>  Selects elements by class name.
+                                </li>
+                                <li>
+                                    <b>getElementsByTagName:</b> Selects elements by tag name.
+                                </li>
+                                <li>
+                                    <b>querySelector:</b> Selects the first element matching a CSS selector.
+                                </li>
+                                <li>
+                                    <b>querySelectorAll:</b> Selects all elements matching a CSS selector
+                                </li>
+                            </ul></p>
+                        </div>
+                      </div>
+
+                      <div tabindex="0" class="collapse collapse-arrow border-base-300 border mt-2">
+                        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                        <div class="collapse-content">
+                          <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to manage events from its child elements. Instead of adding separate event listeners to each child, the event bubbles up from the target (child) to the parent, where the event listener can catch it.</p>
+                        </div>
+                      </div>
+
+                      <div tabindex="0" class="collapse collapse-arrow border-base-300 border mt-2">
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                        <div class="collapse-content">
+                          <p>To manipulate an element's attributes and styles using the DOM, you can use methods like setAttribute() to set or update attributes, getAttribute() to retrieve an attribute's value, and removeAttribute() to delete an attribute. For styling, you can modify the element's inline styles directly using element.style.property = value, or manage classes with classList.add(), remove(), or toggle(), allowing you to dynamically adjust styles and attributes based on user interactions or other events.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <!-- main end -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
